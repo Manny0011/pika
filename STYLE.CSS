@@ -1,0 +1,175 @@
+@font-face {
+    font-family: pokemon;
+    src: url(./assets/Montserrat-VariableFont_wght.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.wrapper{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.left{
+    height: 100%;
+    width: 65%;
+    background-color: #fbc50c;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.right{
+    height: 100%;
+    width: 35%;
+    background-color: #fae8b5;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+}
+
+.navbar img{
+    height: 100px;
+    margin-top: 0;
+    margin-left: 30px;}
+
+
+.hamburger span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 4px 0 ;
+    border-radius: 30px;
+   
+
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 80px;
+    
+}
+.pikachu{
+    position: absolute;
+    right: 25%;
+    bottom: 0;
+    height: 70%;
+    left: 50%;
+    top: 15%;
+}   
+
+.pokeball{
+    position: absolute;
+    bottom: -80px;
+    
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.3;
+    
+}
+
+.dots{
+    right: 25px;
+    top: 280px;
+    border-radius: 50%;
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    transform: translateY(50%);
+    margin-right: 50px;
+
+}
+.dots span{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0.4;
+    background: #fac30e;
+    margin-top:20px;
+}
+.dots span:first-child{
+    opacity: 1;
+    background: black
+    ;
+}
+
+.left h1{
+    font-size: 90px;
+    font-weight: 800;
+    /* margin-left: 50px  ; */
+     margin: 5px 0 15px 50px;
+       font-family: sans-serif;
+    
+}
+.left p:first-child{
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin-left:60px ;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    font-family: "pokemon";
+    font-weight: 500;
+    
+}
+.left p{
+    font-size: 24px;
+         margin: 5px 0 15px 50px;
+         line-height: 1.4;
+         max-width: 550px;
+    margin-bottom: 25px;
+    font-family: pokemon;
+}
+
+
+
+
+.left p:last-of-type{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+
+
